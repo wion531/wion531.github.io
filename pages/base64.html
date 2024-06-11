@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Home | William O'Neill</title>
+    <title>Base64 encoder/decoder | William O'Neill</title>
     <link rel="stylesheet" href="/style.css">
   </head>
   <body>
@@ -14,9 +14,13 @@
         <a href="/index.html">Home</a>
         <a href="/pages/base64.html">Base64 encoder/decoder</a>
       </div>
-      <h1>Hi, how are you?</h1>
-<p>This is William O'Neill's personal webpage.</p>
-<p>There currently isn't much here, but feel free to poke around.</p>
+      <h1>Base64 encoder/decoder</h1>
+<p>Input:</p>
+<textarea id="base64-input" name="base64-input" rows="8" cols="80"></textarea>
+<p><input id="base64-encode" type="button" value="Encode" onclick="base64_encode()"></input>
+<input id="base64-decode" type="button" value="Decode" onclick="base64_decode()"></input></p>
+<p>Output:</p>
+<textarea id="base64-output" name="base64-output" rows="8" cols="80"></textarea>
     </main>
     <script src="/script.js"></script>
   </body>

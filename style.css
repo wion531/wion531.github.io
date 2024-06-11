@@ -1,0 +1,58 @@
+@import "data/catppuccin.css";
+
+@font-face {
+  font-family: opensans;
+  src: url(data/opensans.ttf);
+}
+
+@font-face {
+  font-family: roboto-mono;
+  src: url(data/roboto-mono.ttf);
+}
+
+body {
+  margin: 40px auto;
+  max-width: 650px;
+  line-height: 1.6;
+  font-size: 16px;
+  background-color: var(--ctp-mocha-base);
+  font-family: opensans;
+  color: #444;
+  padding: 0 10px;
+}
+
+h1, h2, h3 {
+  line-height: 1.2;
+  color: var(--ctp-mocha-text);
+}
+
+p {
+  color: var(--ctp-mocha-subtext0);
+}
+
+a {
+  color: var(--ctp-mocha-blue);
+}
+
+textarea {
+  background-color: var(--ctp-mocha-mantle);
+  color: var(--ctp-mocha-text);
+  font-family: roboto-mono;
+}
+
+input {
+  background-color: var(--ctp-mocha-surface0);
+  color: var(--ctp-mocha-text);
+  font-family: opensans;
+  border: none;
+  padding: 8px 16px;
+}
+
+input[type=button]:hover {
+  cursor: pointer;
+}
+
+.tab-list {
+  display: flex;
+  justify-content: space-between;
+}
