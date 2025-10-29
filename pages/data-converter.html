@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Data Converter | William O'Neill</title>
+    <link rel="stylesheet" href="/style.css">
+  </head>
+  <body>
+    <main>
+      <div class="tab-list">
+        <a href="/index.html">Home</a>
+        <a href="/pages/base64.html">Base64 Encoder/Decoder</a>
+        <a href="/pages/data-converter.html">Data Converter</a>
+      </div>
+      <h1>William's Very Nifty Multi-Purpose Data Converter (WVNMPDC)</h1>
+<p>Input:</p>
+<textarea id="converter-input" name="converter-input" rows="8" cols="80"></textarea>
+
+<div id="converter-options">
+  <select name="converter-input-type" id="converter-input-type">
+    <option value="binary">Binary</option>
+    <option value="octal">Octal</option>
+    <option value="hexadecimal">Hexadecimal</option>
+    <option value="ascii">ASCII</option>
+    <option value="utf8">UTF-8</option>
+  </select>
+  <p style="display: inline-block">to</p>
+  <!-- make sure you copy/paste this over! -->
+  <select name="converter-output-type" id="converter-output-type">
+    <option value="binary">Binary</option>
+    <option value="octal">Octal</option>
+    <option value="hexadecimal">Hexadecimal</option>
+    <option value="ascii">ASCII</option>
+    <option value="utf8">UTF-8</option>
+  </select>
+  <input id="converter-button" type="button" onclick="data_converter()" value="Convert!"></input>
+</div>
+
+<p>Output:</p>
+<textarea id="converter-output" name="converter-output" rows="8" cols="80"></textarea>
+    </main>
+    <script src="/script.js"></script>
+  </body>
+</html>

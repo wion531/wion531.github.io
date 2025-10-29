@@ -6,8 +6,8 @@
 }
 
 @font-face {
-  font-family: roboto-mono;
-  src: url(data/roboto-mono.ttf);
+  font-family: monaspace-neon;
+  src: url(data/monaspace.otf);
 }
 
 body {
@@ -37,22 +37,48 @@ a {
 textarea {
   background-color: var(--ctp-mocha-mantle);
   color: var(--ctp-mocha-text);
-  font-family: roboto-mono;
+  font-family: monaspace-neon;
 }
 
 input {
   background-color: var(--ctp-mocha-surface0);
   color: var(--ctp-mocha-text);
   font-family: opensans;
-  border: none;
-  padding: 8px 16px;
+  border: 1px solid;
+  border-radius: 5px;
+  border-color: var(--ctp-mocha-surface2);
+  padding: 4px 8px;
 }
 
 input[type=button]:hover {
+  background-color: var(--ctp-mocha-surface1);
+  cursor: pointer;
+}
+
+input[type=button]:active {
+  background-color: var(--ctp-mocha-surface2);
+} 
+
+select {
+  background-color: var(--ctp-mocha-surface0);
+  color: var(--ctp-mocha-text);
+  font-family: opensans;
+  border: 1px solid;
+  border-radius: 5px;
+  border-color: var(--ctp-mocha-surface2);
+  padding: 4px 8px;
+}
+
+select:hover {
   cursor: pointer;
 }
 
 .tab-list {
   display: flex;
   justify-content: space-between;
+}
+
+.converter-options {
+  display: flex;
+  flex-direction: row;
 }

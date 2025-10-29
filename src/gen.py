@@ -30,7 +30,8 @@ base = """
     <main>
       <div class="tab-list">
         <a href="/index.html">Home</a>
-        <a href="/pages/base64.html">Base64 encoder/decoder</a>
+        <a href="/pages/base64.html">Base64 Encoder/Decoder</a>
+        <a href="/pages/data-converter.html">Data Converter</a>
       </div>
       {}
     </main>
